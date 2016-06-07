@@ -14,6 +14,7 @@ if [ $HA = "yes" ]; then
 	sed -i -E "s/STANDBY_NAMENODE_IP/$STANDBY_NAMENODE_IP/g" $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 	sed -i -E "s/STANDBY_NAMENODE_ID/$STANDBY_NAMENODE_ID/g" $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 	sed -i -E "s/HA_ZOOKEEPER_QUORUM/$HA_ZOOKEEPER_QUORUM/g" $HADOOP_HOME/etc/hadoop/hdfs-site.xml
+	sed -i -E "s/HA_ZOOKEEPER_QUORUM/$HA_ZOOKEEPER_QUORUM/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 	sed -i -E "s/YARN_ZK_DIR/$YARN_ZK_DIR/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 	sed -i -E "s/YARN_CLUSTER_ID/$YARN_CLUSTER_ID/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 	sed -i -E "s/YARN_RM1_IP/$YARN_RM1_IP/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
