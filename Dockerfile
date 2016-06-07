@@ -8,6 +8,7 @@ FROM 10.10.36.213/library/jdk7:7u80
 MAINTAINER jingchaosong jingchao.song@tendcloud.com
 
 ADD ./hadoop-2.6.0-cdh5.5.2 /usr/local/hadoop/
+ADD ./hadoop-conf/ /usr/local/hadoop/etc/hadoop/
 
 ENV HADOOP_HOME /usr/local/hadoop
 ENV PATH "/usr/local/hadoop/bin:/usr/local/hadoop/sbin:$PATH"
@@ -20,8 +21,6 @@ echo "PATH=${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin:${SPARK_HOME}/bin:${PATH}">>/e
 echo "CLASSPATH=.:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar">>/etc/profile
 
 ADD scripts/startup.sh /usr/bin/
-
-ADD ./conf/* /usr/local/hadoop/etc/hadoop/
 
 ADD ./lib/* /usr/local/hadoop/lib/native/
 
