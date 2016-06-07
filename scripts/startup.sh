@@ -6,6 +6,7 @@
 #Edit hadoop configuration
 if [ $HA = "yes" ]; then
 	echo "With hadoop HA"
+	mv $HADOOP_HOME/etc/hadoop/withha/* $HADOOP_HOME/etc/hadoop/
 	sed -i -E "s/NAMESERVICE/$NAMESERVICE/g" $HADOOP_HOME/etc/hadoop/core-site.xml
 	sed -i -E "s/NAMESERVICE/$NAMESERVICE/g" $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 	sed -i -E "s/ACTIVE_NAMENODE_IP/$ACTIVE_NAMENODE_IP/g" $HADOOP_HOME/etc/hadoop/hdfs-site.xml
