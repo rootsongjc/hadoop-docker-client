@@ -10,6 +10,18 @@ MAINTAINER jingchaosong jingchao.song@tendcloud.com
 ADD ./hadoop-2.6.0-cdh5.5.2 /usr/local/hadoop/
 ADD ./hadoop-conf/ /usr/local/hadoop/etc/hadoop/
 
+ENV HA yes
+ENV NAMESERVICE dcnameservice
+ENV ACTIVE_NAMENODE_IP bj-dc-namenode-001.tendcloud.com
+ENV STANDBY_NAMENODE_IP bj-dc-namenode-002.tendcloud.com
+ENV ACTIVE_NAMENODE_ID namenode79
+ENV STANDBY_NAMENODE_ID namenode129
+ENV HA_ZOOKEEPER_QUORUM bj-dc-jn-001.tendcloud.com:2181,bj-dc-jn-002.tendcloud.com:2181,bj-dc-namenode-001.tendcloud.com:2181,bj-dc-namenode-002.tendcloud.com:2181,bj-dc-yarn-001.tendcloud.com:2181,bj-dc-yarn-002.tendcloud.com:2181,bj-dc-zk-001.tendcloud.com:2181
+ENV YARN_ZK_DIR yarn1
+ENV YARN_CLUSTER_ID yarn1
+ENV YARN_RM1_IP bj-dc-yarn1-rm1.tendcloud.com
+ENV YARN_RM2_IP bj-dc-yarn1-rm2.tendcloud.com
+ENV YARN_JOBHISTORY_IP bj-dc-yarn1-rm1.tendcloud.com
 ENV HADOOP_HOME /usr/local/hadoop
 ENV PATH "/usr/local/hadoop/bin:/usr/local/hadoop/sbin:$PATH"
 ENV HADOOP_CONF_DIR $HADOOP_HOME/etc/hadoop

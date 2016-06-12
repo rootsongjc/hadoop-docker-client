@@ -19,6 +19,7 @@ if [ $HA = "yes" ]; then
 	sed -i -E "s/YARN_CLUSTER_ID/$YARN_CLUSTER_ID/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 	sed -i -E "s/YARN_RM1_IP/$YARN_RM1_IP/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 	sed -i -E "s/YARN_RM2_IP/$YARN_RM2_IP/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
+	sed -i -E "s/YARN_JOBHISTORY_IP/$YARN_JOBHISTORY_IP/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 	sed -i -E "s/YARN_JOBHISTORY_IP/$YARN_JOBHISTORY_IP/g" $HADOOP_HOME/etc/hadoop/mapred-site.xml
 elif [ $HA = "no" ]; then
 	echo "Without hadoop HA"
