@@ -6,11 +6,11 @@
     <value>NAMESERVICE</value>
   </property>
   <property>
-    <name>dfs.client.failover.proxy.provider.addmp</name>
+    <name>dfs.client.failover.proxy.provider.NAMESERVICE</name>
     <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
   </property>
   <property>
-    <name>dfs.ha.automatic-failover.enabled.addmp</name>
+    <name>dfs.ha.automatic-failover.enabled.NAMESERVICE</name>
     <value>true</value>
   </property>
   <property>
@@ -18,39 +18,39 @@
     <value>HA_ZOOKEEPER_QUORUM</value>
   </property>
   <property>
-    <name>dfs.ha.namenodes.addmp</name>
+    <name>dfs.ha.namenodes.NAMESERVICE</name>
     <value>ACTIVE_NAMENODE_ID,STANDBY_NAMENODE_ID</value>
   </property>
   <property>
-    <name>dfs.namenode.rpc-address.addmp.ACTIVE_NAMENODE_ID</name>
+    <name>dfs.namenode.rpc-address.NAMESERVICE.ACTIVE_NAMENODE_ID</name>
     <value>ACTIVE_NAMENODE_IP:8020</value>
   </property>
   <property>
-    <name>dfs.namenode.servicerpc-address.addmp.ACTIVE_NAMENODE_ID</name>
+    <name>dfs.namenode.servicerpc-address.NAMESERVICE.ACTIVE_NAMENODE_ID</name>
     <value>ACTIVE_NAMENODE_IP:8022</value>
   </property>
   <property>
-    <name>dfs.namenode.http-address.addmp.ACTIVE_NAMENODE_ID</name>
+    <name>dfs.namenode.http-address.NAMESERVICE.ACTIVE_NAMENODE_ID</name>
     <value>ACTIVE_NAMENODE_IP:50070</value>
   </property>
   <property>
-    <name>dfs.namenode.https-address.addmp.ACTIVE_NAMENODE_ID</name>
+    <name>dfs.namenode.https-address.NAMESERVICE.ACTIVE_NAMENODE_ID</name>
     <value>ACTIVE_NAMENODE_IP:50470</value>
   </property>
   <property>
-    <name>dfs.namenode.rpc-address.addmp.STANDBY_NAMENODE_ID</name>
+    <name>dfs.namenode.rpc-address.NAMESERVICE.STANDBY_NAMENODE_ID</name>
     <value>STANDBY_NAMENODE_IP:8020</value>
   </property>
   <property>
-    <name>dfs.namenode.servicerpc-address.addmp.STANDBY_NAMENODE_ID</name>
+    <name>dfs.namenode.servicerpc-address.NAMESERVICE.STANDBY_NAMENODE_ID</name>
     <value>STANDBY_NAMENODE_IP:8022</value>
   </property>
   <property>
-    <name>dfs.namenode.http-address.addmp.STANDBY_NAMENODE_ID</name>
+    <name>dfs.namenode.http-address.NAMESERVICE.STANDBY_NAMENODE_ID</name>
     <value>STANDBY_NAMENODE_IP:50070</value>
   </property>
   <property>
-    <name>dfs.namenode.https-address.addmp.STANDBY_NAMENODE_ID</name>
+    <name>dfs.namenode.https-address.NAMESERVICE.STANDBY_NAMENODE_ID</name>
     <value>STANDBY_NAMENODE_IP:50470</value>
   </property>
   <property>
