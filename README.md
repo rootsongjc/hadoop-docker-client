@@ -54,5 +54,5 @@ docker run -d --name=hadoop-client-withoutha -e NANENODE_IP=172.16.31.63 -e RESO
 
 - RESOURCEMANAGER_IP
 
-- HISTORYSERVER_IP
+- YARN_JOBHISTORY_IP 
 

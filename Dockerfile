@@ -22,6 +22,8 @@ ENV YARN_CLUSTER_ID yarn1
 ENV YARN_RM1_IP bj-dc-yarn1-rm1.tendcloud.com
 ENV YARN_RM2_IP bj-dc-yarn1-rm2.tendcloud.com
 ENV YARN_JOBHISTORY_IP bj-dc-yarn1-rm1.tendcloud.com
+ENV NAMENODE_IP bj-dc-namenode-001.tendcloud.com
+ENV RESOURCEMANAGER_IP bj-dc-namenode-001.tendcloud.com
 ENV HADOOP_HOME /usr/local/hadoop
 ENV PATH "/usr/local/hadoop/bin:/usr/local/hadoop/sbin:$PATH"
 ENV HADOOP_CONF_DIR $HADOOP_HOME/etc/hadoop
